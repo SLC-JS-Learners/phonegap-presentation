@@ -4,10 +4,11 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>PhoneGap</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="A presentation about PhoneGap for SLC JS Learners.">
+		<meta name="author" content="MetaSean">
+		<meta name="presentation framework" content="reveal.js">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -40,336 +41,380 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
 
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
-
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
-
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-
-						```
-						<section data-markdown>
-						  ## Markdown support
-
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
-
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+				<section> <!-- installation -->
+					<section style="">
+						<div  style="float:left;">
+							<h2>Prerequisites</h2>
+							<ul style="float:left;">
+								<li>PhoneGap via NPM</li>
+								<li>git</li>
+								<li>GitHub account</li>
+								<li>QR reader app <br />(recommended)</li>
+							</ul>
 						</div>
+
+						<div  style="float:right;">
+							<h2>Wireless</h2>
+							<ol>
+								<li>octanner.com / 10.0.0.1</li>
+								<li>type in your email address</li>
+								<li>do NOT press enter; <br />click the submit button</li>
+							</ol>
+						</div>
+						<div style="clear: both;"></div>
+					</section>
+					<section>
+						<h2>Install PhoneGap with NPM</h2>
+						<pre><code>$ sudo npm install -g phonegap</code></pre>
+					</section>
+					<section>
+						<h2>Install NPM</h2>
+						<a href="http://nodejs.org/download/">http://nodejs.org/download/</a>
 					</section>
 				</section>
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
+
+				<section> <!-- title -->
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>Sponser: O.C. Tanner Labs, provides space and dinner</li>
+								<li>At 7:30 we are followed by UtahJS SLC Meetup; led by Ken Snyder and Joe Eames</li>
+								<li>Other relevant meetups include:<ul>
+									<li>LunchJS</li>
+									<li>AngularJS Utah</li>
+									<li>ReactJS</li>
+									<li>primarily for women is the Girl Develop It Salt Lake City group</li>
+									<li>a new SLC Front-End Web Developers</li>
+								</ul></li>
+						</aside>
+						<h1>SLC JS Learners</h1>
+						<ul>
+							<li class="fragment">Sean Duncan</li>
+							<li class="fragment">O.C. Tanner Labs</li>
+							<li class="fragment">UtahJS SLC Meetup</li>
+							<li class="fragment">Other meetups</li>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>Thank you to Anthony Martinez</li>
+								<li>Baseline knowledge expectation - Completed or actively working on completing <a href="http://www.codecademy.com/tracks/javascript">codecademy's JavaScript track</a></li>
+								<li>We don't want any highfalutin topics.</li>
+								<li>Hands-on - This isn't designed to be a spray and pray lecture.</li>
+							</ul>
+						</aside>
+						<h2>SLC JS Learners - Principles</h2>
+						<ul>
+							<li class="fragment">Knowledge level: <a href="http://www.codecademy.com/tracks/javascript">codecademy's JavaScript track</a>.</li>
+							<li class="fragment">If you have a question - ASK!!!</li>
+							<li class="fragment">Topics relevant to novices and junior devs.</li>
+							<li class="fragment">Hands-on</li>
+						</ul>
+					</section>
+				</section>
+
+
+
+				<section> <!-- title -->
+					<h3>An introduction to Adobe's</h3>
+					<h1>PhoneGap</h1>
 					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+						By <a href="http://metasean.info/#/">MetaSean</a>
 					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
+					<hr />
 					<p>
-						You can override background transitions per-slide.
+						<a href="https://github.com/SLC-JS-Learners/phonegap-presentation/index.html">github.com/SLC-JS-Learners<br/>/phonegap-presentation/index.html</a>
 					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
 				</section>
 
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
 
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Marvelous List</h2>
+				<section> <!-- history -->
+					<h2>History & Names</h2>
 					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+						<li class="fragment">PhoneGap was created around 2009 by Nitobi.</li>
+						<li class="fragment">In 2011, Adobe bought Nitobi and the PhoneGap brand.</li>
+						<li class="fragment">PhoneGap's source code was donated to the Apache Software Foundation.</li>
+						<li class="fragment">
+							<img src="./img/cordova-logo.jpg" style="vertical-align: middle; width: 43px; border: none"/>
+							Apache's open source code is called Cordova.
+						</li>
+						<li class="fragment">
+							<img src="./img/phonegap-logo.jpg" style="vertical-align: middle; border: none"/>
+							Adobe's PhoneGap extends Cordova.
+						</li>
+					</ul>
+					<p></p>
+					<small class="fragment">
+						<ul>
+							<p>Sources:</p>
+							<li><a href="http://ionicframework.com/blog/what-is-cordova-phonegap/">http://ionicframework.com/blog/what-is-cordova-phonegap/</a></li>
+							<li><a href="http://phonegap.com/2012/03/19/phonegap-cordova-and-what%E2%80%99s-in-a-name/">http://phonegap.com/2012/03/19/phonegap-cordova-and-what%E2%80%99s-in-a-name/</a></li>
+							<li><a href="https://en.wikipedia.org/wiki/PhoneGap">https://en.wikipedia.org/wiki/PhoneGap</a></li>
+						</ul>
+					</small>
+				</section>
+
+				<section>
+					<h2>Supported Cordova Platforms</h2>
+					<ul>
+						<li>Amazon Fire OS</li>
+						<li>Android</li>
+						<li>BlackBerry 10</li>
+						<li>Firefox OS</li>
+						<li>iOS</li>
+						<li>Ubuntu</li>
+						<li>Windows Phone 8</li>
+						<li>Windows</li>
+						<li>Tizen</li>
 					</ul>
 				</section>
 
+
 				<section>
-					<h2>Fantastic Ordered List</h2>
+					<h2>Single Page Application (SPA)</h2>
+					<aside class="notes">
+						<a href="http://alpha.ideavis.co/529cc5f">http://alpha.ideavis.co/529cc5f</a>
+					</aside>
+					<ul>
+						<li>AngularJS</li>
+						<li>EmberJS</li>
+						<li>Backbone</li>
+						<li>Kendo UI</li>
+						<li>Monaca</li>
+						<li>ReactJS</li>
+						<li>Sencha Touch</li>
+						<li>jQuery Mobile</li>
+						<li>many, many, more</li>
+					</ul>
+					<p>
+						<small><a href="http://alpha.ideavis.co/529cc5f">http://alpha.ideavis.co/529cc5f</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>App versus Command Line</h2>
+					<p class="fragment">PhoneGap Developer App<br />
+						<a href="http://app.phonegap.com/">app.phonegap.com/</a></p>
+				</section>
+
+
+				<section> <!-- starting project -->
+					<aside class="notes">
+						The "platform" at the end of the error messaged is an edge-case artifact of either WebStorm or the Reveal presentation template; it's not in the actual error message.
+					</aside>
+					<section>
+						<h2>Let's get codin'</h2>
+						<ol>
+							<li>Create and navigate to your project directory.</li>
+							<li class="fragment"><pre><code>$ phonegap create app-name</code></pre></li>
+							<li class="fragment"><pre><code>$ cd app-name</code></pre></li>
+							<li class="fragment"><pre><code>$ phonegap run android</code></pre></li>
+						</ol>
+					</section>
+					<section>
+						<h2>Build Error!!!</h2>
+						<pre><code>[phonegap] executing 'cordova run android'...
+No platforms added to this project.
+Please use `cordova platform add <platform>`.</code></pre>
+					</section>
+				</section>
+
+				<section> <!-- to GitHub -->
+					<h2>Push to GitHub</h2>
 					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
+						<li>Create the new project in your GitHub account</li>
+						<li class="fragment"><pre><code>echo "# SLC JS Learner's phonegap-demo" >> README.md</code></pre></li>
+						<li class="fragment"><pre><code>$ git init</code></pre></li>
+						<li class="fragment"><pre><code>$ git add .</code></pre></li>
+						<li class="fragment"><pre><code>$ git commit -m "init commit"</code></pre></li>
+						<li class="fragment"><pre><code>$ git remote add origin git@github.com:SLC-JS-Learners/phonegap-demo.git</code></pre></li>
+						<li class="fragment"><pre><code>$ git push -u origin master</code></pre></li>
+					</ol>
+				</section>
+
+				<section> <!-- to PhoneGap builder -->
+					<h2>Push to Adobe PhoneGap </h2>
+					<ol>
+						<li class="fragment">Create an Adobe PhoneGap account at: <a href="https://build.phonegap.com/plans">build.phonegap.com/plans</a></li>
+						<li class="fragment">Paste your new GitHub repo into the *open-source* tab on <a href="https://build.phonegap.com/apps">build.phonegap.com/apps</a></li>
+					</ol>
+					<img class="fragment" src="img/git%20repo%20into%20build_phonegap_com_apps%20-%20highlighted.jpg" />
+				</section>
+
+				<section>
+					<h2>Build, baby, build</h2>
+					<img src="img/phonegap%20ready%20to%20build%20-%20highlighted.jpg" />
+				</section>
+
+				<section>
+					<h2>Download</h2>
+					<img src="img/qr%20code%20-%20highlighted.jpg" />
+				</section>
+
+				<section>
+					<section>
+						<h2>Update <code>index.html</code></h2>
+						<ul><li>Delete the following lines:
+						<pre><code><h1>PhoneGap</h1>
+<div id="deviceready" class="blink">
+  <p class="event listening">Connecting to Device</p>
+  <p class="event received">Device is Ready</p>
+</div></code></pre></li>
+						<li>Replace with the following line:
+						<pre><code><h1>PhoneGap Demo</h1>
+<p>Hello World</p></code></pre></li>
+							<li>Delete the following lines:
+						<pre><code><link rel="stylesheet" type="text/css" href="css/index.css" /></code></pre></li></ul>
+					</section>
+				</section>
+
+
+				<section>
+					<h2>Test Locally</h2>
+					<ul>
+						<li><pre><code>phonegap serve</code></pre></li>
+						<li>Open the 'listening on' address (e.g. <code>192.168.8.102:3000</code>)</li>
+					</ul>
+				</section>
+
+				<section> <!-- to GitHub -->
+					<h2>Push to GitHub</h2>
+					<pre><code>$ git add .
+$ git commit -m "init commit"
+$ git push -u origin master</code></pre></li>
 					</ol>
 				</section>
 
 				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							<tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
+					<h2>Edit <code>config.xml</code></h2>
 					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
+						<li>Edit the following fields, as appropriate:
+						<ul>
+							<li>name</li>
+							<li>description</li>
+							<li>author email</li>
+						</ul></li>
+						<li>Reference:
+							<ul>
+								<li><a href="http://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html#Plugin%20APIs">docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html#Plugin APIs</a></li>
+								</ul>
+						</li>
 					</ul>
 				</section>
 
-				<section style="text-align: left;">
+				<section>
+					<h2>Review Plug-in API and other resources</h2>
+					<ul>
+						<li><a href="http://plugins.cordova.io/#/package/org.apache.cordova.camera">cordova.camera</a></li>
+						<li><a href="http://code.tutsplus.com/tutorials/phonegap-from-scratch-camera-api-app-exporting--mobile-9519">TutsPlus</a></li>
+						<li><a href="http://ventusmoso.com/phonegap/jquerymobile/phonegap-camera-tutoria/">jQuery</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Create <code>camera.js</code></h2>
+					<pre><code>function capturePhoto(){
+	navigator.camera.getPicture(photoTaken, error,
+		{
+			sourceType: 1,
+			quality: 60
+		});
+}
+
+function photoTaken(data) {
+	cameraPic.src = data;
+	alert('Photo taken: ' + cameraPic.src);
+}
+
+function error(msg) {
+	alert('Error: ' + msg);
+}</code></pre>
+				</section>
+
+				<section>
+					<h2>Update index.html</h2>
+					<ul>
+						<li>Delete:<br />
+							<pre><code><p>Hello World</p></code></pre>
+							Replace with:<br />
+							<pre><code><button class="camera-control" onclick="capturePhoto();">Capture Photo</button>
+
+<div style="text-align:center;margin:20px;">
+	<img id="cameraPic" src="" style="width:auto;height:120px;"></img>
+</div></code></pre></li>
+						<li><em>After</em> the line:
+							<pre><code><script type="text/javascript" src="js/index.js"></script></code></pre>
+						Add:
+						<pre><code><script type="text/javascript" src="js/camera.js"></script></code></pre></li>
+					</ul>
+					<pre><code></code></pre>
+				</section>
+
+
+
+				<section>
+					<section>
+						<h2>Push and rebuild</h2>
+						<ul>
+							<li><pre><code>$ git add .
+	$ git commit -m "init commit"
+	$ git push -u origin master        </code></pre></li>
+							</ol></li>
+							<li>
+								<img src="img/update%20code%20-%20highlighted.jpg" style="vertical-align: top;"/>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2>No need to Rebuild</h2>
+						<img src="img/rebuild%20-%20highlighted.jpg" />
+					</section>
+					<section>
+						<h2>Download and Reinstall</h2>
+						<img src="img/qr%20code%20-%20highlighted.jpg" />
+					</section>
+				</section>
+
+				<section>
+					<aside class="notes">
+						In my initial tests, there are some modifications required to get an Ionic app to compile correctly.
+					</aside>
+					<h2>Areas for Improvement & Exploration</h2>
+					<ul>
+						<li>Make the design responsive (e.g. webkit)</li>
+						<li>Make camera fully independent<br />
+							(i.e. no need to route through another app)</li>
+						<li>What benefit does the "Developer App" provide?</li>
+						<li>What is "hydration"?</li>
+						<li>How does it work with Ionic apps?</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<aside class="notes">
+						Both tutorials are for PhoneGap version <strong><em>3.x.x</em></strong>.  According to `phonegap -v`, the version I downloaded this weekend is <strong><em>4.2.0-0.23.0</em></strong> .
+					</aside>
+					<h2>More Tutorials</h2>
+					<ul>
+						<li>Basic - Zombie To-Do list: <a href="http://www.raywenderlich.com/30734/phonegap-tutorial-a-cross-platform-zombie-app">http://www.raywenderlich.com/30734/phonegap-tutorial-a-cross-platform-zombie-app</a></li>
+						<li>Advanced - Mobile API Hodgepodge: <a href="http://coenraets.org/blog/phonegap-tutorial/">http://coenraets.org/blog/phonegap-tutorial/</a></li>
+					</ul>
+				</section>
+
+
+
+				<section style="text-align: left;"> <!-- ending -->
 					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
+					<ul>
+						<li>This presentation is available at <a href="https://github.com/SLC-JS-Learners/phonegap-presentation">github.com/SLC-JS-Learners/phonegap-presentation</a></li>
+						<li>Presentation uses the <a href="http://lab.hakim.se/reveal-js/#/">Reveal</a> presentation framework by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></li>
+					</ul>
 				</section>
 
 			</div>
